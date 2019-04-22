@@ -1,6 +1,6 @@
 const { assert } = require('chai');
 
-const spin = require('../spinatrix');
+const spin = require('../');
 
 describe('spinatrix lib', () => {
   const matrix = [
