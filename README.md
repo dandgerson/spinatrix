@@ -4,8 +4,10 @@ simple lib for matrix rotation
 
 ## example
 
+```npm i spinatrix```
+
 ```javascript
-const spin = require('./');
+const spin = require('spinatrix');
 
 const matrix = [
   [1, 2, 3],
