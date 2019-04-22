@@ -5,30 +5,30 @@ simple lib for matrix rotation
 ## example
 
 ```javascript
-const spin = require('../spinatrix');
+const spin = require('./');
 
 const matrix = [
-  ['a', 'b', 'c'],
-  ['a', 'b', 'c'],
-  ['a', 'b', 'c'],
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
 ];
 
 const turned90 = spin.x90(matrix);
 // -> [
-//   ['a', 'a', 'a'],
-//   ['b', 'b', 'b'],
-//   ['c', 'c', 'c'],
+//   [7, 4, 1],
+//   [8, 5, 2],
+//   [9, 6, 3],
 // ];
 const turned180 = spin.x180(matrix);
 // -> [
-//   ['c', 'b', 'a'],
-//   ['c', 'b', 'a'],
-//   ['c', 'b', 'a'],
+//   [9, 8, 7],
+//   [6, 5, 4],
+//   [3, 2, 1],
 // ];
 const turned270 = spin.x270(matrix);
 // -> [
-//   ['c', 'c', 'c'],
-//   ['b', 'b', 'b'],
-//   ['a', 'a', 'a'],
+//   [3, 6, 9],
+//   [2, 5, 8],
+//   [1, 4, 7],
 // ];
 ```
