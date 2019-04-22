@@ -1,0 +1,25 @@
+{
+  "name": "spinatrix",
+  "version": "1.0.0",
+  "description": "simple lib for matrix rotate",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "matrix",
+    "rotate"
+  ],
+  "author": "Dmitry G. Anderson",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
