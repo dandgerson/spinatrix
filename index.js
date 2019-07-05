@@ -1,7 +1,7 @@
-const x90 = (matrix) => {
-  const rotated = [];
+var x90 = function(matrix) {
+  var rotated = [];
   for (let i = 0; i < matrix[0].length; i += 1) {
-    const row = [];
+    var row = [];
     for (let j = matrix.length - 1; j >= 0; j -= 1) {
       row.push(matrix[j][i]);
     }
@@ -10,14 +10,16 @@ const x90 = (matrix) => {
   return rotated;
 };
 
-const x180 = matrix => matrix
-  .map(row => row.slice().reverse())
+var x180 = function(matrix) {
+  return matrix
+  .map(function(row) { return row.slice().reverse(); })
   .reverse();
+};
 
-const x270 = (matrix) => {
-  const rotated = [];
+var x270 = function(matrix) {
+  var rotated = [];
   for (let i = matrix[0].length - 1; i >= 0; i -= 1) {
-    const row = [];
+    var row = [];
     for (let j = 0; j < matrix.length; j += 1) {
       row.push(matrix[j][i]);
     }
